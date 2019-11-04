@@ -1,0 +1,293 @@
+.header {
+  position: relative; }
+  .header__top {
+    position: absolute;
+    background-color: #56CCF2;
+    position: relative;
+    width: 1029px;
+    height: 848px; }
+  .header__rotate {
+    position: absolute;
+    width: 1108px;
+    height: 601px;
+    left: 583px;
+    background: #56CCF2;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg); }
+  .header__nav {
+    position: absolute;
+    top: 51px;
+    left: 227px; }
+
+.nav {
+  color: white; }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .nav__item {
+    padding: 0 32px; }
+    .nav__item_title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 100%;
+      color: white;
+      padding-right: 80px; }
+    .nav__item_act {
+      padding: 0 70px; }
+  .nav__link {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%; }
+    .nav__link_active {
+      position: relative; }
+      .nav__link_active::after {
+        position: absolute;
+        content: "";
+        width: 64px;
+        height: 4px;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        background: #FCC304;
+        border-radius: 32px; }
+
+@media screen and (max-width: 999px) {
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .nav__item_title {
+    padding: 0; } }
+
+body,
+html,
+ul,
+li,
+button,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a,
+a:visited {
+  text-decoration: none; }
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  position: absolute;
+  top: 160px;
+  left: 270px; }
+  .heading__name {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 150%;
+    color: white;
+    margin-bottom: 22px;
+    margin-left: 100px; }
+  .heading__descrip {
+    font-size: 24px;
+    line-height: 150%;
+    color: white;
+    margin: 0 100px; }
+  .heading__button {
+    margin-left: 100px;
+    margin-top: 42px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    background-color: white;
+    border-radius: 64px;
+    width: 226px;
+    height: 56px;
+    border: none;
+    cursor: pointer; }
+
+@media screen and (max-width: 999px) {
+  .heading {
+    justify-items: center; }
+    .heading__name {
+      margin: 60px 190px 0 0; } }
+
+.photo {
+  position: relative;
+  margin-top: 80px;
+  width: 1146px;
+  height: 640px; }
+  .photo__title {
+    position: absolute;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #56CCF2;
+    bottom: 144px;
+    left: 98px; }
+  .photo__text {
+    position: absolute;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 140%;
+    color: white;
+    bottom: 80px;
+    left: 98px; }
+  .photo__button {
+    position: absolute;
+    width: 162.46px;
+    height: 64px;
+    background-color: #FCC304;
+    border-radius: 50px;
+    border: none;
+    top: calc(100% - 350px);
+    left: -80px; }
+    .photo__button::before {
+      content: "<";
+      font-size: 36px;
+      color: white;
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 30px; }
+    .photo__button::after {
+      content: ">";
+      font-size: 36px;
+      color: white;
+      display: block;
+      position: absolute;
+      top: 9px;
+      right: 30px; }
+  .photo__networks {
+    position: absolute;
+    left: calc( 1146px + 65px); }
+
+.networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+  .networks__social {
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 150%;
+    color: #253757;
+    text-transform: uppercase;
+    padding-left: 85px; }
+
+.inform {
+  margin-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .inform__text {
+    margin-top: 21px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%; }
+
+.section {
+  position: relative;
+  padding-top: 320px;
+  padding-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+@media screen and (max-width: 999px) {
+  .section {
+    padding-left: 40px;
+    padding-right: 40px; } }
+
+.main-heading {
+  margin-left: 37px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+  color: #56CCF2;
+  position: relative; }
+  .main-heading::before {
+    content: "";
+    margin-left: -37px;
+    display: block;
+    position: absolute;
+    background-image: url(../images/Vector.png);
+    width: 21px;
+    height: 21px; }
+
+.product-card {
+  background-color: white; }
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 136px;
+  margin-left: 227px; }
+  .cards__item {
+    padding-right: 128px; }
+
+.picture {
+  padding: 0 25px; }
+  .picture__title {
+    font-weight: 900;
+    font-size: 19.6px;
+    line-height: 140%;
+    padding-bottom: 32px; }
+  .picture__description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0; }
+
+.title {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  color: #253757;
+  margin-top: 160px; }
+
+body {
+  background: #eee; }
+
+/*# sourceMappingURL=main.css.map */
