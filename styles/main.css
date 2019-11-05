@@ -1,4 +1,5 @@
 .header {
+  background-color: #e5e5e5;
   position: relative; }
   .header__top {
     position: relative;
@@ -139,7 +140,7 @@ a:visited {
   .photo__title {
     position: absolute;
     font-weight: 800;
-    font-size: 12.6px;
+    font-size: 13px;
     line-height: 150%;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -156,30 +157,43 @@ a:visited {
     bottom: 80px;
     left: 98px; }
   .photo__button {
-    position: absolute;
-    width: 162.46px;
+    position: relative;
+    width: 81px;
     height: 64px;
     background-color: #fcc304;
-    border-radius: 50px;
     border: none;
-    top: calc(100% - 350px);
-    left: -80px; }
-    .photo__button::before {
-      content: "<";
-      font-size: 36px;
-      color: #fff;
-      display: block;
-      position: absolute;
-      top: 9px;
-      left: 30px; }
+    bottom: 357px;
+    left: -80px;
+    border-radius: 50px 0 0 50px; }
     .photo__button::after {
-      content: ">";
-      font-size: 36px;
+      content: "";
       color: #fff;
       display: block;
       position: absolute;
-      top: 9px;
-      right: 30px; }
+      top: 19px;
+      right: 33px;
+      width: 24px;
+      height: 31px;
+      background: url(../images/lg.svg) no-repeat; }
+  .photo__left {
+    position: relative;
+    width: 81px;
+    height: 64px;
+    background-color: #fcc304;
+    border: none;
+    bottom: 357px;
+    left: -80px;
+    border-radius: 0 50px 50px 0; }
+    .photo__left::after {
+      content: "";
+      color: #fff;
+      display: block;
+      position: absolute;
+      top: 19px;
+      left: 33px;
+      width: 24px;
+      height: 31px;
+      background: url(../images/gt.svg) no-repeat; }
   .photo__networks {
     position: absolute;
     left: calc( 1146px + 65px);
@@ -217,9 +231,11 @@ a:visited {
     line-height: 150%; }
 
 .section {
+  background: #e5e5e5;
+  z-index: -1;
   position: relative;
   padding-top: 320px;
-  padding-bottom: 0;
+  padding-bottom: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,7 +267,8 @@ a:visited {
     height: 21px; }
 
 .product-card {
-  background-color: #fff; }
+  background-color: #fff;
+  padding-bottom: 160px; }
 
 .cards {
   display: -webkit-box;
@@ -269,7 +286,7 @@ a:visited {
   padding: 0 25px; }
   .picture__title {
     font-weight: 900;
-    font-size: 19.6px;
+    font-size: 20px;
     line-height: 140%;
     padding-bottom: 32px; }
   .picture__description {
@@ -279,15 +296,135 @@ a:visited {
     margin: 0; }
 
 .title {
+  top: -24px;
+  position: relative;
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
   line-height: 100%;
   text-align: center;
-  color: #253757;
-  margin-top: 160px; }
+  color: #253757; }
 
-body {
-  background: #eee; }
+.process {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #e5e5e5;
+  margin-left: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .process__inform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .process__heading {
+    width: 362px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 140%;
+    padding-left: 160px;
+    padding-bottom: 64px; }
+  .process__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    width: 362px;
+    padding-left: 160px;
+    padding-bottom: 21px; }
+  .process__title {
+    padding-top: 160px;
+    padding-left: 160px;
+    padding-bottom: 21px; }
+  .process__row {
+    width: 362px; }
+
+.block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 240px;
+  height: 256px;
+  background: #fff;
+  -webkit-box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+          box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02); }
+  .block_another {
+    margin-top: 128px; }
+  .block__circle {
+    position: absolute;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left bottom, left top, from(#56ccf2), to(#56ccf2)), #c4c4c4;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #56ccf2, #56ccf2), #c4c4c4;
+    opacity: 0.1;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    top: 35px;
+    left: 96px; }
+    .block__circle_two {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+      opacity: 0.1; }
+    .block__circle_three {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), -webkit-gradient(linear, left bottom, left top, from(#03d542), to(#03d542)), #c4c4c4;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(0deg, #03d542, #03d542), #c4c4c4;
+      opacity: 0.1; }
+    .block__circle_four {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656;
+      opacity: 0.1; }
+  .block__number {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #56ccf2; }
+    .block__number_two {
+      color: #fcc304; }
+    .block__number_three {
+      color: green; }
+    .block__number_four {
+      color: #f25656; }
+  .block__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    padding-bottom: 48px; }
+
+.block__cards_one {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 240px;
+  display: block;
+  margin-top: 336px;
+  margin-left: 187px; }
+
+.block__cards_two {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 240px;
+  display: block;
+  margin-top: 225px;
+  margin-left: 58px; }
 
 /*# sourceMappingURL=main.css.map */
