@@ -440,7 +440,8 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  margin-bottom: 0; }
   .features__title {
     color: white;
     margin-left: 37px;
@@ -533,5 +534,108 @@ body {
       height: 64px;
       width: 64px;
       left: 0; }
+
+.testimonials {
+  background-color: #fff; }
+  .testimonials__title {
+    margin-left: 227px;
+    margin-bottom: 10px; }
+  .testimonials__heading {
+    margin-left: 28px;
+    width: 362px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 140%;
+    padding-left: 160px;
+    padding-bottom: 64px; }
+
+.person {
+  position: relative;
+  padding: 240px 32px 58px;
+  text-align: center;
+  background-color: #fefefe;
+  -webkit-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
+          box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05); }
+  .person__decor {
+    position: absolute;
+    width: 160px;
+    height: 64px;
+    border-radius: 32px;
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+    left: calc(50% - 80px);
+    top: 93px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56ccf2;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2; }
+  .person__photo {
+    position: absolute;
+    width: 64px;
+    height: 123px;
+    border-radius: 32px;
+    left: calc(50% - 32px);
+    top: 102px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .person__img {
+    height: 100%; }
+  .person__description {
+    font-style: italic;
+    font-size: 14px;
+    margin: 0; }
+  .person__inform {
+    font-size: 13px; }
+    .person__inform::before {
+      content: "";
+      display: block;
+      margin: 31px auto;
+      width: 64px;
+      height: 2px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56ccf2;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2; }
+  .person__name {
+    font-weight: bold;
+    margin: 0; }
+  .person__position {
+    font-weight: 800px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #56ccf2; }
+
+.people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 160px; }
+  .people__item {
+    -webkit-box-flex: 314;
+        -ms-flex: 314 0 0px;
+            flex: 314 0 0;
+    margin: 0 40px;
+    width: 314px; }
+
+.person__first .person__decor,
+.person__first .person__inform::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56ccf2;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2; }
+
+.person__second .person__decor,
+.person__second .person__inform::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304; }
+
+.person__third .person__decor,
+.person__third .person__inform::before {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656; }
 
 /*# sourceMappingURL=main.css.map */
