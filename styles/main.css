@@ -1,5 +1,5 @@
 .header {
-  background-color: #e5e5e5;
+  background-color: #fcfcfd;
   position: relative; }
   .header__top {
     position: relative;
@@ -88,6 +88,9 @@ ul {
 a,
 a:visited {
   text-decoration: none; }
+
+body {
+  background: #fcfcfd; }
 
 .heading {
   display: -webkit-box;
@@ -231,7 +234,6 @@ a:visited {
     line-height: 150%; }
 
 .section {
-  background: #e5e5e5;
   z-index: -1;
   position: relative;
   padding-top: 320px;
@@ -282,18 +284,20 @@ a:visited {
   .cards__item {
     padding-right: 128px; }
 
-.picture {
-  padding: 0 25px; }
-  .picture__title {
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 140%;
-    padding-bottom: 32px; }
-  .picture__description {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 150%;
-    margin: 0; }
+.picture__photo {
+  margin-left: -24px; }
+
+.picture__title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 140%;
+  padding-bottom: 32px; }
+
+.picture__description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0; }
 
 .title {
   top: -24px;
@@ -308,7 +312,6 @@ a:visited {
 .process {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #e5e5e5;
   margin-left: 104px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,8 +347,6 @@ a:visited {
     padding-top: 160px;
     padding-left: 160px;
     padding-bottom: 21px; }
-  .process__row {
-    width: 362px; }
 
 .block {
   display: -webkit-box;
@@ -425,5 +426,112 @@ a:visited {
   display: block;
   margin-top: 225px;
   margin-left: 58px; }
+
+.features {
+  background-color: #56ccf2;
+  height: 1000px;
+  z-index: -1;
+  position: relative;
+  top: -165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .features__title {
+    color: white;
+    margin-left: 37px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 150%;
+    position: relative; }
+    .features__title::before {
+      content: "";
+      margin-left: -37px;
+      display: block;
+      position: absolute;
+      background-image: url(../images/title.png);
+      width: 21px;
+      height: 21px; }
+  .features__inform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 199px;
+    margin-left: 227px; }
+  .features__heading {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 140%;
+    margin-top: 19px;
+    margin-bottom: 69px; }
+
+.slider_rotate {
+  height: 1000px;
+  width: 800px;
+  position: absolute;
+  top: 0;
+  left: 549px; }
+
+.features__text {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  padding-bottom: 64px;
+  position: relative;
+  padding-left: 105px; }
+  .features__text::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/logo1.svg);
+    height: 64px;
+    width: 64px;
+    left: 0; }
+  .features__text_two {
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 64px;
+    position: relative;
+    padding-left: 105px; }
+    .features__text_two::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/logo3.svg);
+      height: 64px;
+      width: 64px;
+      left: 0; }
+  .features__text_three {
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 64px;
+    position: relative;
+    padding-left: 105px; }
+    .features__text_three::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/logo2.svg);
+      height: 64px;
+      width: 64px;
+      left: 0; }
 
 /*# sourceMappingURL=main.css.map */
