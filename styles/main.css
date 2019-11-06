@@ -17,7 +17,7 @@
   .header__nav {
     position: absolute;
     top: 51px;
-    left: 227px; }
+    left: 193px; }
 
 .nav {
   color: #fff; }
@@ -52,6 +52,8 @@
         bottom: -10px;
         background: #fcc304;
         border-radius: 32px; }
+    .nav__link:hover {
+      color: #e1e1f3; }
 
 body,
 html,
@@ -117,12 +119,8 @@ body {
     height: 56px;
     border: none;
     cursor: pointer; }
-
-@media screen and (max-width: 999px) {
-  .heading {
-    justify-items: center; }
-    .heading__name {
-      margin: 60px 190px 0 0; } }
+    .heading__button:hover {
+      background-color: #e1e1f3; }
 
 .photo {
   position: relative;
@@ -157,7 +155,10 @@ body {
     border: none;
     bottom: 357px;
     left: -80px;
-    border-radius: 50px 0 0 50px; }
+    border-radius: 50px 0 0 50px;
+    cursor: pointer; }
+    .photo__button:hover {
+      background-color: #dfae0d; }
     .photo__button::after {
       content: "";
       color: #fff;
@@ -176,7 +177,10 @@ body {
     border: none;
     bottom: 357px;
     left: -80px;
-    border-radius: 0 50px 50px 0; }
+    border-radius: 0 50px 50px 0;
+    cursor: pointer; }
+    .photo__left:hover {
+      background-color: #dfae0d; }
     .photo__left::after {
       content: "";
       color: #fff;
@@ -265,7 +269,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 162px;
+  padding-left: 153px;
   padding-top: 160px; }
   .cards__item {
     -webkit-box-flex: 314px;
@@ -669,6 +673,8 @@ body {
     border: none;
     cursor: pointer;
     margin: 0 auto; }
+    .vision__button:hover {
+      background-color: #2370d4; }
 
 .message {
   -webkit-box-sizing: border-box;
@@ -743,6 +749,8 @@ body {
     letter-spacing: 1px;
     cursor: pointer;
     margin-top: 60px; }
+    .message__button:hover {
+      background-color: #2370d4; }
 
 .contact {
   display: -webkit-box;
@@ -815,18 +823,9 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 150%; }
-
-@media screen and (max-width: 999px) {
-  .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .nav__item_title {
-    padding: 0; } }
+  line-height: 150%;
+  color: #253757; }
+  .navigation__link:hover {
+    color: #31588a; }
 
 /*# sourceMappingURL=main.css.map */
