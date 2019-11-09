@@ -11,11 +11,11 @@
 
 <body>
   <script type="text/javascript" src="scripts/main.js"></script>
-  <main class="main">
   <header class="header">
-    <nav class="nav header__nav">
+    <div class="header__menu">
+    <div  class="header__logo">Dia</div>
+    <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item nav__item_title">Dia</li>
         <li class="nav__item">
           <a href="#" class="nav__link">Home</a>
         </li>
@@ -36,28 +36,34 @@
         </li>
       </ul>
     </nav>
+  </div>
+
+  <section class="header__content center">
+        <h1 class="header__name">Global digital agency</h1>
+        <p class="header__descrip">By the same illusion which lifts the horizon of the sea to the level of<br> the
+          spectator on a hillside, the sable cloud beneath.
+        </p>
+        <button class="header__button">Learn more</button>
+      </section>
+  </header>
+
+
+
     <article class="photo">
-      <img src="https://raw.githubusercontent.com/mate-academy/layout_dia/master/src/images/slider/slide-img-1.jpg" alt="men and women" class="photo__img">
-      <div class="photo__block"><p class="photo__title">Intro</p>
-      <p class="photo__text">By the same illusion which<br> lifts the horizon.</p></div>
+      <div class="photo__container container">
+      <img src="./images/Photo.png" alt="men and women" class="photo__img">
+      <p class="photo__title">Intro</p>
+      <p class="photo__text">By the same illusion which<br> lifts the horizon.</p>
       <div class="button"><button class="photo__button "></button><button class=" photo__left"></button></div>
-      <ul class="photo__networks networks">
+    </div>
+     <ul class="photo__networks networks">
         <li><a href="#" class="networks__soc">Facebook</a> </li>
         <li><a href="#" class="networks__soc"> Twitter</a> </li>
         <li><a href="#" class="networks__soc">Instagram </a></li>
       </ul>
     </article>
-  </header>
-    <section class="heading">
-      <div class="heading__content">
-        <h1 class="heading__name">Global digital agency</h1>
-        <p class="heading__descrip">By the same illusion which lifts the horizon of the sea to the level of<br> the
-          spectator on a hillside, the sable cloud beneath.
-        </p>
-        <button class="heading__button">Learn more</button>
-      </div>
 
-      </section>
+
     <section class="section">
       <div class="inform">
         <p class="inform__heading main-heading">Welcome</p>
@@ -74,24 +80,24 @@
         <action class="cards__item">
           <div class="picture">
             <img src="https://raw.githubusercontent.com/mate-academy/layout_dia/master/src/images/what-we-do/what-we-do-1.jpg" alt="" class="picture__photo">
-            <h3 class="picture__title">By the same illusion which lifts the horizon.</h3>
+            <h3 class="picture__title">By the same illusion which<br> lifts the horizon.</h3>
             <p class="picture__description ">By the same illusion which lifts the horizon of the sea to the level of
               the spectator on a hillside.</p>
           </div>
         </action>
-        <action class="cards__item">
+        <action class="cards__item_second">
           <div class="picture">
             <img src="https://raw.githubusercontent.com/mate-academy/layout_dia/master/src/images/what-we-do/what-we-do-2.jpg" alt="" class="picture__photo">
-            <h3 class="picture__title">By the same illusion which lifts the horizon.</h3>
+            <h3 class="picture__title">By the same illusion which<br> lifts the horizon.</h3>
             <p class="picture__description">By the same illusion which lifts the horizon of the sea to the level of
               the spectator on a hillside.
             </p>
           </div>
         </action>
-        <action class="cards__item">
+        <action class="cards__item_third">
           <div class="picture">
             <img src="https://raw.githubusercontent.com/mate-academy/layout_dia/master/src/images/what-we-do/what-we-do-3.jpg" alt="" class="picture__photo">
-            <h3 class="picture__title">By the same illusion which lifts the horizon.</h3>
+            <h3 class="picture__title">By the same illusion which <br>lifts the horizon.</h3>
             <p class="picture__description">By the same illusion which lifts the  horizon of the sea to the level of
               the spectator on a hillside.</p>
           </div>
@@ -109,6 +115,7 @@
           immense
           dark sphere, whose upper half was strewn with silver.</p>
       </div>
+      <div class="box">
       <section class="block__cards_one">
         <div class="block">
           <div class="block__circle"></div>
@@ -147,6 +154,7 @@
           </p>
         </div>
       </section>
+    </div>
     </section>
 
     <section class="features">
@@ -162,13 +170,16 @@
         <p class="features__text_three">By the same illusion which lifts the<br>horizon of the sea to the level of
           the<br> spectator on a hillside,
           the sable <br>cloud beneath was dished out.</p>
-
       </div>
-      <img src="./images/photo.rotate.png" alt="guys" class="slider_rotate">
-    </section>
+      <div class="features__photo"><img src="images/photo.rotate.png" class="features__img" alt="guys" div>
+        </section>
     <section class="testimonials">
-      <p class="main-heading testimonials__title">Testimonials</p>
+      <div class="testimonials__cotainer">
+      <article class="test"><p class="main-heading testimonials__title">Testimonials</p>
       <p class="testimonials__heading">By the same illusion which lifts the horizon.</p>
+      </article>
+      <div class="testimonials__hidden"></div>
+      </div>
       <section class="people">
         <article class="people__item">
           <div class="person person__first">
