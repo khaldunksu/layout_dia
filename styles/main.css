@@ -205,6 +205,14 @@ html {
   .menu__toggle:checked ~ .menu__btn > .menu__span {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
+    .menu__toggle:checked ~ .menu__btn > .menu__span::before, .menu__toggle:checked ~ .menu__btn > .menu__span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: #253757;
+      -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s; }
   .menu__toggle:checked ~ .menu__btn > .menu__span::before {
     top: 0;
     -webkit-transform: rotate(0);
@@ -224,14 +232,6 @@ html {
     height: 100%;
     cursor: pointer;
     z-index: 1; }
-  .menu__toggle:checked ~ .menu__btn > .menu__span::before, .menu__toggle:checked ~ .menu__btn > .menu__span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: #253757;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s; }
   .nav__item_logo {
     display: none; }
   .menu__span::before {
