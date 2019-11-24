@@ -224,7 +224,7 @@ html {
     height: 100%;
     cursor: pointer;
     z-index: 1; }
-  .menu__span::before, .menu__span::after {
+  .menu__toggle:checked ~ .menu__btn > .menu__span::before, .menu__toggle:checked ~ .menu__btn > .menu__span::after {
     display: block;
     position: absolute;
     width: 100%;
