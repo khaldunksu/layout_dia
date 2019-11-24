@@ -224,9 +224,8 @@ html {
     height: 100%;
     cursor: pointer;
     z-index: 1; }
-  .menu__span,
-  .menu__span::before,
-  .menu__span::after {
+  .menu__span::after,
+  .menu__span::before {
     display: block;
     position: absolute;
     width: 100%;
